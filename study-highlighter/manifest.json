@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Study Highlighter",
+  "version": "0.1.0",
+  "description": "Highlight text on any web page and see it again on your next visit.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
